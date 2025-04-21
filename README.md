@@ -1,4 +1,4 @@
-# OS-Linux-commands-Shell-scripting
+![image](https://github.com/user-attachments/assets/33e293db-1311-4656-8656-558e0f70ffd2)# OS-Linux-commands-Shell-scripting
 Operating systems Lab exercise
 # Linux commands-Shell scripting
 Linux commands-Shell scripting
@@ -43,22 +43,27 @@ s.n. dasgupta
 cat < file1
 ## OUTPUT
 
+![image](https://github.com/user-attachments/assets/d3622404-d369-4bb2-84c5-670b568e94d3)
 
 
 cat < file2
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/147ce091-5cb0-4559-a785-7021b0b29fd6)
 
 
 # Comparing Files
 cmp file1 file2
 ## OUTPUT
- 
+ ![image](https://github.com/user-attachments/assets/d0a1bf06-5c04-44b6-97e4-1255382c0db7)
+
 comm file1 file2
  ## OUTPUT
+![image](https://github.com/user-attachments/assets/5b81657e-8b28-4ddb-b59e-d7b53e0fda5e)
 
  
 diff file1 file2
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/85fad8c2-5e22-4695-92e5-44ef1dca5aa2)
 
 
 #Filters
@@ -83,16 +88,19 @@ cat > file22
 cut -c1-3 file11
 ## OUTPUT
 
+![image](https://github.com/user-attachments/assets/0fccf73e-088b-4780-ad6e-94432f67e302)
 
 
 
 cut -d "|" -f 1 file22
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/0a4f40b4-902e-433a-a1ad-5e646dbb1f75)
 
 
 
 cut -d "|" -f 2 file22
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/12a73dca-8aff-482f-8014-4a724e2bec8c)
 
 
 cat < newfile 
@@ -107,39 +115,39 @@ hello world
  
 grep Hello newfile 
 ## OUTPUT
-
-
-
-grep hello newfile 
-## OUTPUT
-
+![image](https://github.com/user-attachments/assets/1b135735-0edf-458c-9bc3-3752c390655c)
 
 
 
 grep -v hello newfile 
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/02eb02be-1c80-4a3a-9059-0c9a09be80e4)
 
 
 
 cat newfile | grep -i "hello"
 ## OUTPUT
 
+![image](https://github.com/user-attachments/assets/ff46a800-b406-478e-9986-6ee356ccd71f)
 
 
 
 cat newfile | grep -i -c "hello"
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/eeecb567-feac-45c7-b615-91297a196d57)
 
 
 
 
 grep -R ubuntu /etc
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/4f31b6e5-184b-4cb1-bd3a-227d1ba63320)
 
 
 
 grep -w -n world newfile   
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/390de593-8be0-412f-9c42-08ba948d4a73)
 
 
 cat < newfile 
@@ -163,59 +171,71 @@ Linux is best in this World
  ```
 egrep -w 'Hello|hello' newfile 
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/7ad9e11c-d957-4b23-9899-db6dbffb042d)
 
 
 
 egrep -w '(H|h)ello' newfile 
 ## OUTPUT
 
+![image](https://github.com/user-attachments/assets/d57c2c9e-cad8-4e83-bd7b-48499b7c530f)
 
 
 egrep -w '(H|h)ell[a-z]' newfile 
 ## OUTPUT
 
+![image](https://github.com/user-attachments/assets/f598dee8-fa9a-4a9b-8fcc-193834548f6d)
 
 
 
 egrep '(^hello)' newfile 
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/6a2a6790-e522-4585-b3bb-95a6abf072a7)
 
 
 
 egrep '(world$)' newfile 
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/f3659550-edfd-4f4a-a0ad-cfe0c6290ecb)
 
 
 
 egrep '(World$)' newfile 
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/a3976e41-2201-42d2-88c7-2f9f6e550f1d)
 
 
 egrep '((W|w)orld$)' newfile 
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/637abaa2-8afe-4c81-88bc-a9046b25d422)
 
 
 
 egrep '[1-9]' newfile 
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/b717076b-2705-46a7-b731-4ccaf897aac1)
 
 
 
 egrep 'Linux.*world' newfile 
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/4d7daa07-683d-48cb-857c-c725c7e2ed57)
 
 
 egrep 'Linux.*World' newfile 
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/e0adefd4-a752-4c3f-878a-a66ac82d9810)
 
 
 egrep l{2} newfile
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/cce3141b-e01c-4521-b07f-be6e07fc0264)
 
 
 
 egrep 's{1,2}' newfile
 ## OUTPUT 
+![image](https://github.com/user-attachments/assets/85fb20f6-48d7-41c4-92b9-a7ac8a3ae2fc)
 
 
 cat > file23
@@ -234,47 +254,56 @@ cat > file23
 
 sed -n -e '3p' file23
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/31f3cf5e-f22a-4333-9dcc-7f5e9347737b)
 
 
 
 sed -n -e '$p' file23
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/04a6112d-ecfb-4648-8d31-503da5c07d2e)
 
 
 
 sed  -e 's/Ram/Sita/' file23
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/f414b534-10ce-40f8-9fc6-1f05cfe9aaf1)
 
 
 
 sed  -e '2s/Ram/Sita/' file23
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/b9921409-35ad-4097-a5c8-53714e5af765)
 
 
 
 sed  '/tom/s/5000/6000/' file23
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/8519591d-859f-4b5a-9763-b70e818ffaa3)
 
 
 
 sed -n -e '1,5p' file23
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/6fa20ff1-0308-431e-a639-0598765fb2a3)
 
 
 
 sed -n -e '2,/Joe/p' file23
 ## OUTPUT
 
+![image](https://github.com/user-attachments/assets/56ad3f30-61c3-4572-8098-419f990950ed)
 
 
 
 sed -n -e '/tom/,/Joe/p' file23
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/96d822cf-6803-452d-a841-3904f5537279)
 
 
 
 seq 10 
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/8e655157-4c98-447a-b199-040b46cd3da4)
 
 
 
